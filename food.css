@@ -1,0 +1,406 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+html{
+    font-size: 10px;
+    background-attachment: fixed;
+}
+*::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+body{
+    overflow-x: hidden;
+   
+}
+
+.stickybar{
+   
+   width: 25vw;
+   height: 65px;
+   background-color: rgb(241, 135, 49);
+   border-radius: 20px;
+   position:fixed;
+   top: 90%;
+   left: 50%;
+   transform: translate(-50%,0);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   padding-top: 1rem;
+   box-shadow: 1px 2px 8px rgb(0, 0, 0,40%);
+}
+.stickyul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.5rem;
+}
+.stickybar img{
+    cursor: pointer;
+}
+
+
+.parent{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    
+}
+/*----------nav----------------*/
+
+.navbar{
+    width: 100vw;
+    height: 6rem;
+    background-color: white;
+    padding-left: 5px;
+}
+.navul{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*-----------------------*/
+.location{
+    width: 15rem;
+    height: 6rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.locationul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#location-img{
+    width: 45px;
+}
+.selectbtn{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: -1rem;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight:bolder;
+    width: 9.8rem;
+}
+
+/*-------------------------------------------------*/
+
+
+
+.offers{
+    width: 15rem;
+    height: 6rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.offerbtn{
+    width: 13rem;
+    height: 4.5rem;
+    background-color: #FF8A00;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 1px 0px 5px rgb(0, 0, 0,10%);
+    
+}
+
+#offerul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+
+}
+/*---------------------------------------------*/
+
+
+.searchbox{
+    width: 50vw;
+    height: 5rem;
+    background-color: white;
+    border-radius: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(165, 165, 165);
+}
+.searchul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input{
+    width: 13vw;
+    height: 3rem;
+    border: none;
+    outline: none;
+}
+
+/*----------------------------------------*/
+
+.filter{
+    width: 80vw;
+    height: 8rem;
+    background-color: white;
+    overflow-x: auto;
+}
+.filter::-webkit-scrollbar{
+    background-color: rgb(255, 255, 255,1%);
+}
+
+.filterul{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.filter-btn{
+   background-color: white;
+   outline: none;
+   border: 1px solid rgb(180, 180, 180);
+   height: 3.2rem;
+   width:8.5rem;
+   border-radius: 7px;
+}
+#filter-select{
+    height: 3.2rem;
+    background-color: white;
+    border: 1px solid rgb(180, 180, 180);
+    outline: none;
+    text-align: center;
+    border-radius: 7px;
+}
+/*---------------------------------------------*/
+
+.cards{
+    width: 100vw;
+    height: 250px;
+    background-color: white;
+    overflow-x: auto;
+    gap:2rem;
+}
+.card2,.card3,.card4::-webkit-scrollbar {
+    width: 8px; /* adjust the width of the scrollbar */
+  }
+  
+  .card2,.card3,.card4::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.2); /* set the background color of the scrollbar track with opacity */
+  }
+  
+  .card2,.card3,.card4::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255); /* set the color of the scrollbar thumb with opacity */
+  }
+.cardul{
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+}
+.card1{
+    width: 25rem;
+    height: 13rem;
+    background-color: blue;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 55rem;
+    border-radius: 5px;
+    transition: 1s;
+}
+.card1:hover{
+    background-size: 57rem;
+    transition: 1s;
+}
+/*--------------------------------------------------*/
+
+.option{
+    width: 90vw;
+    height: 18rem;
+    background-color: white;
+    padding-left: .5rem;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    padding-bottom: 1rem;
+    transition: 1s;
+    overflow-x: auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.option:hover{
+    background-color: rgb(215, 212, 212);
+    transition: 1s;
+}
+.optionul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    transition: 1s;
+   
+}
+.card2,.card3{
+    width: 130px;
+    height: 100px;
+    background-color: rgb(234, 230, 230);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    box-shadow: 1px 8px 8px rgb(14, 14, 14,12%);
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+}
+.card2:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+/*------------parent2------------------*/
+
+
+
+.parent2{
+    width: 100vw;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   align-items: center;
+    background-color: rgb(255, 255, 255);
+  
+}
+
+.resturantp{
+    width: 100vw;
+    text-align: center;
+}
+
+.resturant{ 
+    width: 80vw;
+    height: 800px;
+    
+    display: flex;
+    overflow-x: auto;
+    
+   
+    
+}
+
+.resturantul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+.card3{
+    height: 200px;
+    background-color: white;
+}
+.near{
+    width: 100vw;
+    height: 4rem;
+   
+    margin-top: 5%;
+
+}
+.nearresturant{
+    width: 100vw;
+    height: 130rem;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+   
+}
+
+.nearresturantul{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.card4{
+    width: 50rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.nearresturant::-webkit-scrollbar{
+   width: .5rem;
+    background-color: white;
+}
+
+.change{
+    gap: 100px;
+}
+#resimg{
+    width: 20rem;
+}
+
+
+@media screen and (max-width:1158px){
+    .stickyul{
+        gap: 3rem;
+    }
+    .stickybar{
+        width: 25rem;
+    }
+    .option{
+        height: 25rem;
+    }
+}
+
+@media screen and (max-width:500px){
+    .change{
+        gap:20px;
+    }
+    #resimg{
+        width: 15rem;
+    }
+}
+@media screen and (max-width:431px){
+    .change{
+        gap:2px;
+    }
+    #resimg{
+        width: 13rem;
+    }
+    .card4{
+        width: 38rem;
+    }
+
+}
+body::-webkit-scrollbar{
+    width: .5rem;
+    background-color: white;
+}
+body::-webkit-scrollbar-thumb{
+    width: .5rem;
+    background-color: rgba(30, 28, 28);
+    border-radius: 100px;
+}
